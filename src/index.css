@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-primary: #C85A32;
+  --color-primary-container: #bf542c;
+  --color-secondary: #2C1810;
+  --color-accent-soft: #E27D60;
+  --color-tertiary: #3D6B52;
+  --color-tertiary-container: #507e64;
+  --color-neutral-light: #FDFBF7;
+  --color-neutral-surface: #F5EFEB;
+  --color-border-delicate: #E6DDD4;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FDFBF7;
+    color: #2C1810;
+  }
+}
+
+@keyframes voiceBloom {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 90, 50, 0.4), 0 0 0 0 rgba(200, 90, 50, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(200, 90, 50, 0.2), 0 0 0 24px rgba(200, 90, 50, 0.08);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 90, 50, 0.4), 0 0 0 0 rgba(200, 90, 50, 0.2);
+  }
+}
+
+.voice-pulse {
+  animation: voiceBloom 2s infinite ease-in-out;
+}
+
+@keyframes waveBar {
+  0%, 100% { height: 6px; }
+  50% { height: 28px; }
+}
+
+.wave-bar {
+  animation: waveBar 0.9s infinite ease-in-out;
+}

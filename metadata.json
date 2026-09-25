@@ -1,0 +1,6 @@
+{
+  "name": "Earth & Craft",
+  "description": "CraftBridge AI system bridging rural artisans and conscious buyers through voice-first catalog management, AI business assistant, and bespoke matching.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
